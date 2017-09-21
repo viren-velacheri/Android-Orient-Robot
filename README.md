@@ -1,11 +1,11 @@
-##Mindstorm robot controlled by an Android smartphone.
+## Mindstorm robot controlled by an Android smartphone.
 
 Demonstrates using the **magnetic orientation sensor**
 in an Android smartphone to steer the robot in a straight line.
 
 Android smartphone communicates via Bluetooth
 with IOIO (https://github.com/ytai/ioio/wiki) board.
-####IOIO Board
+#### IOIO Board
 ![IOIO](/images/ioio.png  "IOIO")
 
 The IOIO board essentially allows the phone to control the pins of a pic micro controller.
@@ -15,23 +15,23 @@ Pins can also be configured as PWM (Pulse Width Modulation) outputs.
 So, the IOIO board provides PWM outputs controlled by the smartphone, which are sent to
 an L298 dual H-Bridge motor controller. Differential steering by varying power to left and right wheels using PWM motor control.
 
-####L298 dual H-Bridge DC motor controller
+#### L298 dual H-Bridge DC motor controller
 ![motor](/images/l298.png "H-Bridge")
 
 ### Video of Robot in Action
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7GzuBxc2jFg" target="_blank"><img src="http://img.youtube.com/vi/7GzuBxc2jFg/0.jpg"
 alt="youtube video" width="480" height="360" border="10" /></a>
 
-###[Link to main source file (MainActivity.java)](/src/app/ioio/orientcontrol/MainActivity.java)
+### [Link to main source file (MainActivity.java)](/src/app/ioio/orientcontrol/MainActivity.java)
 
-####IOIO Board Notes
+#### IOIO Board Notes
 
 Got *geeeetech* IOIO board from China. Cost $20, came with female and male headers.
 
 IOIO board is bare so had to solder the female headers to IOIO board.
 Powered on IOIO board with 8.65 v DC from home made power supply. Red led turns on.
 
-#####Software:
+##### Software:
 IOIO was released 2011 with an eclipse based android developers kit. Had old version of eclipse, ran into problems trying to update ADT plug-in. Decided to re-install.
 As of May 2015, Google had removed the links to download an eclipse based kit. Searched stack-overflow and found some old links. The last release was dated 2014-07-02 (July 2014).
 
@@ -76,14 +76,14 @@ Now connected phone to IOIO board, and HelloIOIO works as expected.
 
 Tried HelloIOIOService. Found that if service was accessing IO, HelloIOIO could not. Sometimes had to use task manager to kill either app or service to get it working.
 
-#####Things to do:
+##### Things to do:
 
 - [x] Order NXT sockets from mindsensor.
 - [x] Order L298 based H-Bridge motor controllers.
 - [ ] IOIO project in Android Studio
 - [x] OpenCV install
 
-#####References
+##### References
 
 http://mitchtech.net/category/tutorials/ioio/
 Projects from mitchtech use deprecated classes and methods (2012)
